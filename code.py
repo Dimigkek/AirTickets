@@ -2,14 +2,15 @@ count = 120
 count1 = 41
 count2 = 41
 count3 = 41
-question = ""
+question = "Yes"
 print("Available seats First class : " + str(count3 - 1) + " ,Business class : " + str(count2 - 1) + " ,Economy class : " + str(count1 - 1))
 
 plane_class = input("Select class\n")
 while plane_class != "First class" and plane_class !="Business" and plane_class != "Economy":
     plane_class = input("Select class between Fist class , Business and Economy\n")
 
-while count > 0 and question != "No":
+while count > 0 :
+
     if plane_class == "Economy":
         print("Reminder!\n Available seats :" + str(count1 - 1))
     elif plane_class == "Business":
@@ -36,6 +37,8 @@ while count > 0 and question != "No":
         while question != "Yes" and question != "No":
             print("Please type Yes or No\n")
             question = input()
+        if question == "No":
+            break
         print("Available seats First class : " + str(count3 - 1) + " ,Business class : " + str(
             count2 - 1) + " ,Economy class : " + str(count1 - 1))
         plane_class = input("Select class\n")
@@ -54,6 +57,8 @@ while count > 0 and question != "No":
         while question != "Yes" and question != "No":
             print("Please type Yes or No\n")
             question = input()
+        if question == "No":
+            break
         print("Available seats First class : " + str(count3 - 1) + " ,Business class : " + str(
             count2 - 1) + " ,Economy class : " + str(count1 - 1))
         plane_class = input("Select class\n")
@@ -71,6 +76,8 @@ while count > 0 and question != "No":
         while question != "Yes" and question != "No":
             print("Please type Yes or No\n")
             question = input()
+        if question == "No":
+            break
         print("Available seats First class : " + str(count3 - 1) + " ,Business class : " + str(
             count2 - 1) + " ,Economy class : " + str(count1 - 1))
         plane_class = input("Select class\n")
