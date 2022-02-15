@@ -44,8 +44,7 @@ while count > 0 :
         plane_class = input("Select class\n")
         while plane_class != "First class" and plane_class != "Business" and plane_class != "Economy":
             plane_class = input("Select class between Fist class , Business and Economy\n")
-    elif plane_class == "Business":
-        print("Reminder!\n Available seats :" + str(count2 - 1))
+    elif plane_class == "Business":        
         if count2 == 1:
             print("There is no available seat.")
             break
@@ -64,7 +63,7 @@ while count > 0 :
         plane_class = input("Select class\n")
         while plane_class != "First class" and plane_class != "Business" and plane_class != "Economy":
             plane_class = input("Select class between Fist class , Business and Economy\n")
-    else:
+    elif plane_class == "First class":
         if count3 == 1:
             print("There is no available seat.")
             break
@@ -85,3 +84,4 @@ while count > 0 :
             plane_class = input("Select class between Fist class , Business and Economy\n")
 
 print("Thank you ,Goodbye!")
+
